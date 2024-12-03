@@ -2,7 +2,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import asyncio
 
-api = "7775779452:AAEATs0Fe0bP-tyd7DfnOmL3nOPUGEWIEI4"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -13,16 +13,6 @@ async def command_start(message):
 @dp.message_handler()
 async def any_message(message):
     print("Введите команду /start, чтобы начать общение")
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
